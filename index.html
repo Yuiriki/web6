@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./script/lib/jquery-1.12.3.js"></script>
+</head>
+<body>
+    
+    <div id="wrap">
+        <header id="header"></header>
+        <main id="main">
+            <div class="section">
+                    <div class="section-left">                
+                        <li><h2>회원서비스</h2></li>
+                        <div class="menu">
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#" class="sign">회원가입</a></li>
+                            <li><a href="#">아이디/비밀번호찾기</a></li>
+                        </div>
+                    </div>
+                
+                    <div class="section-right">
+                        <div class="page-title">
+                            <h3>회원가입</h3>
+                            <ul>
+                                <li><a href="#" title="해당화면 프린트하기"></a></li>
+                                <li><a href="#" title="해당페이지 공유하기 목록 열기. 카카오톡,페이스북,트위터,다음,네이버,url 공유 버튼을 확인할수있습니다."></a></li>
+                            </ul>
+                        </div>
+                        <div class="progress">
+                            <li><strong>01</strong><span>약관동의</span></li>
+                            <li class="curr"><strong>02</strong><span>가입정보입력</span></li>
+                            <li><strong>03</strong><span>가입완료</span></li>
+                        </div>
+                        <div class="border-box">
+                            <ul>
+                                <li>
+                                    <p>개인(직장가입자)이 아닌<span> 사업장업무를 위한 회원가입 </span>입니다.</p>
+                                </li>
+                                <li>
+                                    <p>사업장관리번호 및 단위 사업장 기호가 다른 경우에는 각각 회원가입을 하셔야 합니다</p>
+                                </li>
+                                <li>
+                                    <p>예) 건설현장 사업장마다 사업장관리번호가 각각 적용되오니 회원가입도 각각 하셔야 해당 업무를 이용하실 수 있습니다.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="comp">
+                            <i></i><p>표는 필수 입력 사항이며, [동일아이디검색] 및 [가입여부확인] 버튼을 반드시 눌러주세요.</p>
+                        </div>
+                        <div class="table">
+                            <div class="table-container">
+                                <div class="left">
+                                    <p>사업장관리번호<i></i></p>
+                                    
+                                </div>                            
+                                <div class="right">
+                                    <div class="input-btn">
+                                        <input type="text" >
+                                        <button class="confirm">사업장관리번호 확인</button>                                    
+                                    </div>
+                                    <button class="confirm-how">사업장 관리번호 확인방법</button>
+                                </div>
+                            </div>
+                            <div class="table-container">
+                                <div class="left">
+                                    <p>사업장기호<i></i></p>
+                                    
+                                </div>                            
+                                <div class="right">
+                                    <div class="input-btn">
+                                        <input type="text" placeholder="사업장관리번호확인 버튼을 클릭하여 검증하시면 자동입력 됩니다." >                                                                           
+                                    </div>                    
+                                </div>
+                            </div>
+                            <div class="table-container">
+                                <div class="left">
+                                    <p>단위사업장기호<i></i></p>
+                                    
+                                </div>                            
+                                <div class="right">
+                                    <div class="input-btn">                                        
+                                        <button class="confirm">단위사업장검색</button>
+                                        <input type="text">                                    
+                                    </div>
+                                    <button class="confirm-how">가입여부 확인하기(실명확인)</button>
+                                </div>
+                            </div>
+                            <div class="table-container">
+                                <div class="left">
+                                    <p>아이디</p>
+                                    <i></i>
+                                </div>                            
+                                <div class="right">
+                                    <div class="input-btn">
+                                        <input type="text" class="id-btn" placeholder="영문+ 숫자 6~10자 이내" title="아이디">
+                                        <button class="confirm" id="idBtn">아이디 중복검색</button>                                    
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="table-container">
+                                <div class="left">
+                                    <p>비밀번호<i></i></p>
+                                    
+                                </div>                            
+                                <div class="right">
+                                    <div class="input-btn">
+                                        <input type="password" id="pwBtn" class="pw-btn" placeholder="영문+ 숫자+ 특수문자(!@#$)각 1자 이상 포함하여9~12자 이내" title="비밀번호">                                           
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="table-container">
+                                <div class="left">
+                                    <p>비밀번호확인<i></i></p>
+                                    
+                                </div>                            
+                                <div class="right">
+                                    <div class="input-btn">
+                                        <input type="password" id="pwBtnCon" class="pw-btn-confirm" placeholder="영문+ 숫자+ 특수문자(!@#$)각 1자 이상 포함하여9~12자 이내" title="비밀번호">                                           
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="table-container">
+                                <div class="left">
+                                    <p>비밀번호 분실 시 확인<br><br>질문<i></i></p>
+                                    
+                                </div>                            
+                                <div class="right">
+                                    <select name="selPw" id="selPwQ" title="비밀번호 분실 시 확인 질문 선택">
+                                        <option value selected="selected">질문을 선택하세요</option>
+                                        <option value="나의 아버지 성함은?">나의 아버지 성함은?</option>
+                                        <option value="나의 그리운 고향은?">나의 그리운 고향은?</option>
+                                        <option value="나의 첫째아이 이름은?">나의 첫째아이 이름은?</option>
+                                        <option value="나의 초등학교 이름은?">나의 초등학교 이름은?</option>
+                                        <option value="나의 보물 제1호는?">나의 보물 제1호는?</option>
+                                        <option value="기억에 남는 추억의 장소는?">기억에 남는 추억의 장소는?</option>
+                                        <option value="나의 인생 좌우명은?">나의 인생 좌우명은?</option>
+                                        <option value="내가 좋아하는 캐릭터는?">내가 좋아하는 캐릭터는?</option>
+                                        <option value="추억하고 싶은 날짜가 있다면?">추억하고 싶은 날짜가 있다면?</option>
+                                        <option value="인상 깊게 읽은 책 이름은?">인상 깊게 읽은 책 이름은?</option>
+                                        <option value="내가 가장 존경하는 인물은?">내가 가장 존경하는 인물은?</option>
+                                        <option value="가장 기억에 남는 선생님 성함은?">가장 기억에 남는 선생님 성함은?</option>
+                                        <option value="내가 받았던 선물 중 기억에 남는 선물은?">내가 받았던 선물 중 기억에 남는 선물은?</option>
+                                        <option value="INPUT" class="self-input">직접입력</option>                                        
+                                    </select>
+                                    <div class="input-btn">
+                                        <input type="text" id="directInput" placeholder="질문을 직접 입력해 주세요. 조회질문은 20자이내 (공란포함)입니다." maxlength="20" title="직접질문입력창">                                           
+                                    </div>                                    
+                                </div>
+                                    
+                            </div>
+                            <div class="table-container">
+                                <div class="left">
+                                    <p>비밀번호분실 시 확인<br><br>답변<i></i></p>
+                                    
+                                </div>                            
+                                <div class="right">
+                                    <div class="input-btn">
+                                        <input type="text" class="selPwQ-confirm" placeholder="조회 답변은 띄어쓰기 포함 10자 이내" maxlength="10" title="비밀번호 답변">                                           
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="table-container">
+                                <div class="left">
+                                    <p>전화번호<i></i></p>
+                                    
+                                </div>                            
+                                <div class="right">
+                                    <div class="input-btn">
+                                        <input type="text" id="phoneNum" class="phone" placeholder="“-(하이픈)” 없이 입력 (예 : 01012345678)" title="전화번호">                                           
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="table-container">
+                                <div class="left">
+                                    <p>팩스번호</p>
+                                    
+                                </div>                            
+                                <div class="right">
+                                    <div class="input-btn">
+                                        <input type="text" id="faxNum" class="fax" placeholder="“-(하이픈)” 없이 입력 (예 : 021230000)" title="팩스번호">                                           
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="table-container">
+                                <div class="left">
+                                    <p>업무담당자명<i></i></p>
+                                    
+                                </div>                            
+                                <div class="right">
+                                    <div class="input-btn">
+                                        <input type="text" id="PIC" placeholder="사업장의 소속된 직장 가입자 직원 또는 대표자" title="담당자">                                           
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="table-container">
+                                <div class="left">
+                                    <p>이메일<i></i></p>
+                                    
+                                </div>                            
+                                <div class="right">
+                                    <div class="input-btn">
+                                        <input type="text" id="emailId" class="email-id" placeholder="" title="이메일아이디">
+                                        <span>@</span>  
+                                        <input type="text" id="emailDomain" class="email-domain" placeholder="" title="도메인">
+                                        <select name="emailDomainSel" id="emailDomainSel">
+                                            <option value selected="selected" class="first-selected">직접입력</option>
+                                            <option value="naver.com">네이버</option>
+                                            <option value="nate.com">네이트</option>
+                                            <option value="daum.net">다음(한메일)</option>
+                                            <option value="yahoo.co.kr">야후</option>
+                                            <option value="hotmail.com">핫메일(MSN)</option>
+                                            <option value="gmail.com">Gmail</option>
+                                        </select>                                        
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="table-container">
+                                <div class="left">
+                                    <p>홈페이지주소</p>
+                                    
+                                </div>                            
+                                <div class="right">
+                                    <div class="input-btn">
+                                        <div class="homePage">
+                                            <span>http://</span>
+                                            <input type="text" class="home" placeholder="" title="홈페이지">
+                                        </div>
+                                                                                   
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="table-container">
+                                <div class="left">
+                                    <p>소식지 수신여부</p>
+                                    
+                                </div>                            
+                                <div class="right">
+                                    <div class="input-btn">
+                                        <div class="info">
+                                            <div class="get">
+                                                <input type="radio" name="getInfo" id="getInfo" title="받음">
+                                                <span>받음</span>
+                                            </div>
+                                            <div class="get refuse">
+                                                <input type="radio" name="getInfo" id="refuseInfo" title="안받음">
+                                                <span>안받음 (공단의 다양한 소식을 무료로 만나보세요)</span>
+                                            </div>
+                                        </div>
+                                                                                   
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="button-box">
+                                <button class="sign-confirm">확인</button>
+                                <button class="sign-cancel">취소</button>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+            
+        </main>
+        <footer id="footer"></footer>
+    </div>
+
+    <script src="./script/insurance.js"></script>
+</body>
+</html>

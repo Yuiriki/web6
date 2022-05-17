@@ -1,0 +1,153 @@
+#wrap{width: 100%;height: 100%;position: relative;}
+#wrap #header{position: relative;z-index: 1;width: 100%;height: 111.5px;}
+
+
+#wrap #main{position: relative;z-index: 2;}
+#wrap #main .section {width: 1180px;height: 1709px;display: flex;margin:0 auto}
+
+/* 좌측 메뉴 */
+#wrap #main .section .section-left{width: 280px;height: 248.75px;padding: 0 60px 0 0;}
+#wrap #main .section .section-left > li{width: 220px;height: 74.75px;padding: 0 0 41px 0; border-bottom: 1px solid #3a3a4a;}
+#wrap #main .section .section-left > li h2{color: #6c6d73;line-height: 1.5;font-weight: bold;font-size: 22.5px;}
+#wrap #main .section .section-left .menu{width: 220px;height: 136px;;margin: 10px 0 0 0;}
+#wrap #main .section .section-left .menu li{width: 220px;height: 41px;border-bottom: 1px solid #ccc;}
+#wrap #main .section .section-left .menu li a{font-size: 15px;color: #3a3a4a;line-height: 40px;}
+#wrap #main .section .section-left .menu li a.sign{color: #D7021B;}
+
+/* 우측메뉴 타이틀 */
+#wrap #main .section .section-right{width: 900px;height: 80px;margin: 0 0 40px 0; }
+#wrap #main .section .section-right .page-title{width: 100%;height: 100%;display:flex;}
+#wrap #main .section .section-right .page-title h3{color: #3a3a4a;font-size: 32px;font-weight: 700;letter-spacing:-.5px;}
+#wrap #main .section .section-right .page-title > ul{display: flex;margin: 0 0 0 auto;}
+#wrap #main .section .section-right .page-title > ul > li{margin: 0 6px;}
+#wrap #main .section .section-right .page-title > ul > li > a{width: 40px;height: 40px;display: block;background-color: #f4f4f4;border-radius: 50%;background: url(../image/ico-print.png) 50% 50% no-repeat}
+#wrap #main .section .section-right .page-title > ul > li:last-child > a{background: url(../image/ico-share.png) 50% 50% no-repeat;}
+
+
+/* 진행 상자 */
+#wrap #main .section .section-right .progress{width: 900px;height: 48px;display: flex;position: relative;}
+#wrap #main .section .section-right .progress li{position: relative;border: 1px solid #a7acb4; margin: 0 0 0 -1px;width: 33.333%;height: 100%;background-color: #f6f6f6; line-height: 48px; text-align: center;}
+#wrap #main .section .section-right .progress li strong{ margin: 0 10px;font-size: 18px;font-weight: 700;}
+#wrap #main .section .section-right .progress li span{ font-size: 15px;padding: 0 0 2px 0;}
+#wrap #main .section .section-right .progress li.curr{position: relative;border: none; margin: 0 0 0 -1px;width: 33.333%;height: 100%;background-color: #44465c; line-height: 48px; text-align: center;z-index: 1;}
+#wrap #main .section .section-right .progress li.curr::before{background: url(../image/arrow-progress-on-2.png)no-repeat;border: 0;content: '';position: absolute;left:-2px;width: 22px;height: 48px; display: block;z-index: 2;}
+#wrap #main .section .section-right .progress li.curr::after{content: '';position: absolute;width: 22px;height: 48px;z-index: 2;background: url(../image/arrow-progress-on.png)no-repeat; right: -20px;}
+#wrap #main .section .section-right .progress li.curr strong{ margin: 0 10px;font-size: 18px;font-weight: 700;color: #fff;}
+#wrap #main .section .section-right .progress li.curr span{ font-size: 15px;color: #fff;}
+
+
+/* 공지게시판 */
+#wrap #main .section .section-right .border-box{width: 100%;height: 159.5px;margin: 40px 0 0 0 ;}
+#wrap #main .section .section-right .border-box > ul{width: 100%;height: 117.5px;border: 1px solid #e1e3e6; padding: 25px 30px;}
+#wrap #main .section .section-right .border-box > ul > li{line-height: 22px;}
+#wrap #main .section .section-right .border-box > ul > li > p{color: #6c6d73;font-size: 15px;}
+#wrap #main .section .section-right .border-box > ul > li > p > span{color: #D7021B;display: inline-block;margin:0 .5px 1.9px 3px;}
+
+/* 표 위 텍스트 */
+#wrap #main .section .section-right .comp{width: 100%;height: 64.5px; margin: 0 0 5px 0; position: relative;}
+#wrap #main .section .section-right .comp > i{width: 5px;height: 5px; background: url(../image/ico-compulsory.png) no-repeat; position: absolute; top: 4px;display: block;}
+#wrap #main .section .section-right .comp > p{font-size: 13px;margin: 0 0 0 10px;}
+
+
+/* 표 */
+#wrap #main .section .section-right .table{border-top: 2px solid #3a3a4a;}
+#wrap #main .section .section-right .table .table-container{display: flex; border-bottom: 1px solid #f1f1f1; }
+
+/* 표 좌측 */
+#wrap #main .section .section-right .table .table-container .left{width: 150px;height: 66.5px;display: flex;}
+#wrap #main .section .section-right .table .table-container .left p{color: #3a3a4a;font-size: 14px;margin: auto 5px;}
+#wrap #main .section .section-right .table .table-container .left p i{width: 5px;height: 5px;background: url(../image/ico-compulsory.png)no-repeat;display:inline-block;margin: auto 0 auto 5px;}
+
+/* 표 우측 */
+#wrap #main .section .section-right .table .table-container .right{width: 750px;display: flex;align-items: center;}
+#wrap #main .section .section-right .table .table-container .right .input-btn{display: flex;}
+#wrap #main .section .section-right .table .table-container .right .input-btn input[type='text']{width: 189px;height: 38px;background-color: #fff2f2; border: 1px solid #ffd7d2; border-radius: 5px; padding: 0 11px; outline: none;}
+#wrap #main .section .section-right .table .table-container .right .input-btn .confirm{width: 156px;height: 38px; border: 1px solid #69727e;background-color: #fff;color: #44465c; border-radius: 5px;margin: 0 11px;}
+#wrap #main .section .section-right .table .table-container .right .input-btn .confirm:hover{background-color: #f1f1f1;}
+#wrap #main .section .section-right .table .table-container .right .confirm-how{width:187px;height: 38px;background-color: #44465c;color: #fff; padding: 0 16px; border-radius: 5px;}
+#wrap #main .section .section-right .table .table-container .right .confirm-how:hover{background-color: #445;}
+#wrap #main .section .section-right .table .table-container .right .input-btn input[type='password']{outline:none}
+
+/* 정규표현식 성공 실패 */
+#wrap #main .section .section-right .table .table-container .right .input-btn input[type='text'].error{outline: 1px solid #D7021B;outline-offset: -1px;}
+#wrap #main .section .section-right .table .table-container .right .input-btn input[type='text'].success{outline: 1px solid #ffd7d2;outline-offset: -1px;}
+#wrap #main .section .section-right .table .table-container .right .input-btn input[type='password'].error{outline: 1px solid #D7021B;outline-offset: -1px;}
+#wrap #main .section .section-right .table .table-container .right .input-btn input[type='password'].success{outline: 1px solid #ffd7d2;outline-offset: -1px;}
+
+
+/* 사업장 기호 */
+#wrap #main .section .section-right .table .table-container:nth-child(2) .right .input-btn input[type='text']{
+    width: 716px;height: 38px;
+    background-color: #f1f1f1;
+    color: #6c6d73;
+    border-color: #ccc;
+}
+/* 단위사업장기호 */
+#wrap #main .section .section-right .table .table-container:nth-child(3) .right .input-btn .confirm{margin: 0; width: 128px;}
+#wrap #main .section .section-right .table .table-container:nth-child(3) .right .input-btn input[type='text']{width: 191px;height: 38px; margin: 0 11px; background: #f1f1f1;border-color: #ccc;}
+#wrap #main .section .section-right .table .table-container:nth-child(3) .right .confirm-how{width: 210px;height: 38px;background: #fff;color: #44465c;border: 1px solid #69727e;border-radius: 5px;}
+#wrap #main .section .section-right .table .table-container:nth-child(3) .right .confirm-how:hover{background-color: #f1f1f1;}
+
+/* 아이디 */
+#wrap #main .section .section-right .table .table-container:nth-child(4) .right .input-btn .confirm{width: 131px;}
+#wrap #main .section .section-right .table .table-container:nth-child(4) .right .input-btn input[type='text']{width: 191px;}
+/* 비밀번호 */
+#wrap #main .section .section-right .table .table-container:nth-child(5) .right .input-btn input[type='password']{width: 539px;height: 38px;background-color: #fff2f2; border: 1px solid #ffd7d2; border-radius: 5px; padding: 0 11px;}
+/* 비밀번호 확인 */
+#wrap #main .section .section-right .table .table-container:nth-child(6) .right .input-btn input[type='password']{width: 539px;height: 38px;background-color: #fff2f2; border: 1px solid #ffd7d2; border-radius: 5px; padding: 0 11px;}
+/* 비밀번호 분실 질문 */
+#wrap #main .section .section-right .table .table-container .right #selPwQ{width: 277px;height: 38px;background-color: #fff2f2; border: 1px solid #ffd7d2; border-radius: 5px; padding: 0 11px; outline: none; margin: 10px 0;}
+#wrap #main .section .section-right .table .table-container .right #selPwQ option{width: 277px;height: 38px;background-color: #fff2f2; border: 1px solid #ffd7d2; border-radius: 5px; padding: 0 11px;}
+#wrap #main .section .section-right .table .table-container:nth-child(7) .right{display: block;margin: auto 0;}
+#wrap #main .section .section-right .table .table-container:nth-child(7) .right .input-btn input[type='text']{width: 539px; margin: 0 0 10px 0; display: none;}
+/* 비밀번후 분실 시 확인 질문 */
+#wrap #main .section .section-right .table .table-container:nth-child(8) .right .input-btn input[type='text']{width: 539px;}
+
+/* 전화번호 */
+#wrap #main .section .section-right .table .table-container:nth-child(9) .right .input-btn input[type='text']{width: 338px;}
+
+/* 팩스번호 */
+#wrap #main .section .section-right .table .table-container:nth-child(10) .right .input-btn input[type='text']{width: 338px;background-color: #fff;color: #3a3a4a;border-color: #ccc;}
+
+/* 업무담당자명 */
+#wrap #main .section .section-right .table .table-container:nth-child(11) .right .input-btn input[type='text']{width: 539px;}
+
+/* 이메일 */
+#wrap #main .section .section-right .table .table-container:nth-child(12) .right .input-btn input[type='text']{width: 160px;}
+#wrap #main .section .section-right .table .table-container:nth-child(12) .right .input-btn input.selected[type='text']{background-color: #f1f1f1;border-color:#6c6d73;outline: none;}
+#wrap #main .section .section-right .table .table-container:nth-child(12) .right .input-btn span{font-size: 15px; line-height: 40px;margin: 0 10px; }
+#wrap #main .section .section-right .table .table-container:nth-child(12) .right .input-btn select{width: 148px;height: 38px;background-color: #fff2f2; border: 1px solid #ffd7d2; border-radius: 5px; margin: 0 10px; padding: 0 0 0 8px; font-size: 15px; outline: none;}
+
+/* 홈페이지 주소 */
+#wrap #main .section .section-right .table .table-container:nth-child(13) .right .input-btn{width: 718px}
+#wrap #main .section .section-right .table .table-container:nth-child(13) .right .input-btn .homePage{width: 718px;height: 40px;display: flex; border: 1px solid #ccc; border-radius: 5px;}
+#wrap #main .section .section-right .table .table-container:nth-child(13) .right .input-btn .homePage span{font-size: 15px; text-align: center;line-height: 38px; margin: 0 0 0 13px;}
+#wrap #main .section .section-right .table .table-container:nth-child(13) .right .input-btn .homePage input.home[type='text']{width: 646px;height: 38px; border: none; background-color: #fff;}
+
+/* 소식지 수신여부 */
+#wrap #main .section .section-right .table .table-container:nth-child(14){border-bottom: 1px solid #ccc;}
+#wrap #main .section .section-right .table .table-container:nth-child(14) .right .input-btn .info{display: flex;}
+#wrap #main .section .section-right .table .table-container:nth-child(14) .right .input-btn .info .get input{width: 20px;height: 20px; appearance: none; border: 1px solid #bec2c8;border-radius: 50%;}
+#wrap #main .section .section-right .table .table-container:nth-child(14) .right .input-btn .info .get.refuse{margin: 0 0 0 30px;}
+#wrap #main .section .section-right .table .table-container:nth-child(14) .right .input-btn .info .get input:checked{border: 6px solid #44465c;}
+#wrap #main .section .section-right .table .table-container:nth-child(14) .right .input-btn .info .get span{font: 15px; margin: 0 0 0 3px;}
+
+/* 버튼 */
+#wrap #main .section .section-right .table .button-box{width: 100%; height: 48px; margin-top: 30px;text-align: center; }
+#wrap #main .section .section-right .table .button-box button.sign-confirm{width: 80px;height: 48px;border-radius: 5px;background: #ee0700;color: #fff; padding: 0 20px;margin: 0 5px; }
+#wrap #main .section .section-right .table .button-box button.sign-confirm:hover{background-color: #D7021B;}
+#wrap #main .section .section-right .table .button-box button.sign-cancel{width: 80px;height: 48px;border-radius: 5px;background: #fff;color: #44465c;padding: 0 20px;border: 1px solid #69727e;margin: 0 5px;}
+#wrap #main .section .section-right .table .button-box button.sign-cancel:hover{background: #f1f1f1;}
+
+
+
+
+
+
+#wrap #footer{position: relative;z-index: 3;width: 100%;}
+
+
+
+
+
+
